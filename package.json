@@ -1,0 +1,35 @@
+{
+    "name": "btdev-lib",
+    "version": "2024.5.4",
+    "description": "",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "npx tsc",
+        "test": "jest"
+    },
+    "keywords": [],
+    "author": "Bin Tang",
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {
+        "@btang/ts-lib": "file:../ts-lib",
+        "typescript": "^5.4.5",
+        "@types/jest": "^29.5.12",
+        "@types/node": "^20.12.10",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.1.2",
+        "ts-node": "^10.9.2"
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "node",
+        "testPathIgnorePatterns": [
+            "/node_modules/",
+            "/dist/"
+        ],
+        "transformIgnorePatterns": [
+            "/node_modules/@btang/ts-toolbox/"
+        ]
+    }
+}
